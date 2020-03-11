@@ -98,7 +98,7 @@ public class MyController {
 	public boolean  publish(@RequestParam("file2") MultipartFile file, Article article,HttpSession session) {
 		
 		if(!file.isEmpty()) {
-		   String upload ="d:/pic/";	//文件路径
+		   String upload ="e:/pic/";	//文件路径
    			//获取文件名称
 		   String filename = file.getOriginalFilename();
 		   //防止文件重名。改文件名称
@@ -190,5 +190,7 @@ public class MyController {
 			model.addAttribute("info",info);
 			return "my/collect/articles";
 		}
+		
+	
 		
 }

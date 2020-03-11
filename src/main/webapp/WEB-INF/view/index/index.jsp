@@ -248,13 +248,13 @@
 							</c:forEach>
 						</div>
 						<!-- 最新文章 -->
-						<div class="card" style="width: 18rem;">
-							<div class="card-header" style="text-align: center;">最新文章</div>
+						<%-- <div class="card" style="width: 18rem;">
+							<div class="card-header" style="text-align: center;">最新图片</div>
 							<div class="card-body">
 								<c:forEach items="${lastInfo.list}" var="lastArticle">
 									<ul class="list-unstyled">
 										<li class="media"><img src="/pic/${lastArticle.picture }"
-											class="mr-3" alt="..." width="60" height="60">
+											class="mr-3" alt="..." width="200" height="200">
 											<div class="media-body">
 												<p style="font-size: 14px">
 													<a href="/articleDetail?id=${lastArticle.id}"
@@ -265,7 +265,7 @@
 									<hr>
 								</c:forEach>
 							</div>
-						</div>
+						</div> --%>
 					</div>
 				</div>
 			</div>

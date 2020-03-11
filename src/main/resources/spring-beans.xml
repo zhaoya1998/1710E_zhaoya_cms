@@ -87,5 +87,7 @@
 		<property name="basePackage" value="com.zhaoya.cms.dao"></property>
 
 	</bean>
-
+       
+       <import resource="redis.xml"></import>
+       
 </beans>

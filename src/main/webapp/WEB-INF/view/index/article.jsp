@@ -29,12 +29,13 @@
 						pattern="yyyy-MM-dd HH:mm:ss" />
 				</p>
 				<c:if test="${null!=collect}">
-				   <a href="javascript:collect(1)"><span style="color: red">★ (已收藏)</span></a>
-				
+					<a href="javascript:collect(1)"><span style="color: red">★
+							(已收藏)</span></a>
+
 				</c:if>
 				<c:if test="${null==collect}">
-				 <a href="javascript:collect(0)">☆ (未收藏)</a>
-				
+					<a href="javascript:collect(0)">☆ (未收藏)</a>
+
 				</c:if>
 			</div>
 		</div>
@@ -66,7 +67,8 @@
 
 				<!-- 显示评论内容
 	 -->
-				<div>
+				
+				 <div>
 					<c:forEach items="${info.list}" var="compent">
 						<dl>
 							<dt>${compent.user.username }&nbsp;${compent.created }</dt>
@@ -76,11 +78,11 @@
 
 					<!-- 引入分页的信息 -->
 					<jsp:include page="/WEB-INF/view/common/pages.jsp"></jsp:include>
-				</div>
+				</div> 
 			</div>
 			<div class="col-md-3">
-			
-			<!-- 热门推荐 -->
+
+				<!-- 热门推荐 -->
 				<div class="card" style="width: 18rem;">
 					<div class="card-header" style="text-align: center;">热门推荐</div>
 					<div class="card-body">
@@ -97,12 +99,12 @@
 							<hr>
 						</c:forEach>
 					</div>
-			
-			
-			
+
+
+
+				</div>
 			</div>
 		</div>
-	</div>
 </body>
 
 <script type="text/javascript">

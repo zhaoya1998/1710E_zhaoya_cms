@@ -104,7 +104,7 @@ String htmlData = request.getParameter("content1") != null ? request.getParamete
 </head>
 <body>
 	<form id="form1">
-		<div class="form-group">
+		 <div class="form-group">
 			<label for="title">文章标题</label> <input id="title"
 				class="form-control form-control-sm" type="text" name="title">
 		</div>
@@ -113,11 +113,13 @@ String htmlData = request.getParameter("content1") != null ? request.getParamete
 				class="form-control form-control-sm" type="text" name="summary">
 		</div>
 		<div class="form-group">
-			<label for="file">标题图片</label> <input id="file"
+			<label for="file">标题图片</label> 
+			<input id="file"
 				class="form-control-file form-control-sm" type="file" name="file2">
 		</div>
 		<div class="form-group form-inline">
 		    <label>栏目</label>
+		    
 			<select class="form-control form-control-sm"  name="channelId"  id="channel">
 			</select>
 			 <label>分类</label>
@@ -126,7 +128,8 @@ String htmlData = request.getParameter("content1") != null ? request.getParamete
 		</div>
 
 		<textarea name="content1" cols="100" rows="8"
-			style="width: 100%; height: 200px; visibility: hidden;"><%=htmlspecialchars(htmlData)%></textarea>
+			style="width: 100%; height: 200px; visibility: hidden;"><%=htmlspecialchars(htmlData)%>
+			</textarea>
 		<br /> <input type="button" class="btn btn-info" name="button" value="提交内容"  onclick="publish()" />
 	</form>
 </body>

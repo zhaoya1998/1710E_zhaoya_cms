@@ -1,6 +1,12 @@
 package com.zhaoya.cms.service;
 
 import com.zhaoya.cms.domain.Article;
+import com.zhaoya.cms.domain.Category;
+import com.zhaoya.cms.domain.Channel;
+import com.zhaoya.cms.domain.Slide;
+
+import java.util.List;
+
 import com.github.pagehelper.PageInfo;
 
 public interface ArticleService {
@@ -46,4 +52,14 @@ public interface ArticleService {
 	 * @return: int
 	 */
 	boolean insert(Article article);
+
+	List<Category> selectCate();
+
+	List<Channel> selectChannel();
+
+	List<Article> selectHot();
+
+	PageInfo<Article> selectPhoto(int i, int j);
+
+	List<Slide> findSlide();
 }
